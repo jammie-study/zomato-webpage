@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background-color: #ebf2ff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navbar__logo {
+    width: 100px;
+
+}
+
+.navbar__logo__image {
+    width: 100%;
+}
+
+.button__primary {
+    background-image: linear-gradient(
+        to right, 
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff212f 100%
+    );
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    padding: 9px 12px;
+
+}
+
+.button__primary:hover{
+    border: 2px solid #FF6767;
+    cursor: pointer;
+}
+
+@media (min-width : 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 40px ;
+    }
+
+    .navbar__logo {
+        width: 130px;
+    }
+    
+}
+
+@media (min-width : 1024px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 15px 50px ;
+    }
+
+    .navbar__logo {
+        width: 150px;
+    }
+
+    .button__primary {
+        padding: 15px 20px;
+    }
+    
+}
